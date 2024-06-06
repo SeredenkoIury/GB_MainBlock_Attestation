@@ -1,19 +1,58 @@
-﻿// Контрольная работа
-// СДАВАТЬ ССЫЛКОЙ НА GITHUB
-// Данная работа необходима для проверки ваших знаний и навыков по итогу прохождения первого блока обучения на программе Разработчик. Мы должны убедится, что базовое знакомство с IT прошло успешно.
+﻿Console.Clear();
+Console.WriteLine("Main Block Attestation");
+Console.WriteLine("by Seredenko Iury Danilovich https://github.com/SeredenkoIury/GB_MainBlock_Attestation");
+Console.WriteLine("");
 
-// Задача алгоритмически не самая сложная, однако для полноценного выполнения проверочной работы необходимо:
 
-// 1. Создать репозиторий на GitHub
-// 2. Нарисовать блок-схему алгоритма (можно обойтись блок-схемой основной содержательной части, если вы выделяете её в отдельный метод)
-// 3. Снабдить репозиторий оформленным текстовым описанием решения (файл README.md)
-// 4. Написать программу, решающую поставленную задачу
-// 5. Использовать контроль версий в работе над этим небольшим проектом (не должно быть так, что всё залито одним коммитом, как минимум этапы 2, 3, и 4 должны быть расположены в разных коммитах)
 
-// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк, длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
+// Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк,
+// длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры, 
+//либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
+//лучше обойтись исключительно массивами.
 
 // Примеры:
 // [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
-// Console.WriteLine("Hello, World!");
+
+
+// input the length of the 1st array (unchecked)
+Console.WriteLine("Add the number of words in your Array and Press ENTER :");
+int n = int.Parse(Console.ReadLine());
+
+// Createing and filling the First Array
+string[] FirstArray = new string[n];
+for (int i = 0; i < n; i++)
+{
+    // Filling the Array from the console with checking if for empty
+    Console.WriteLine($"Add the word number {i + 1} and Press ENTER");
+    FirstArray[i] = Console.ReadLine();
+
+    while (string.IsNullOrEmpty(FirstArray[i]))
+    {
+        Console.WriteLine("!WARNING! You cannot leave an empty value in the array, Please try again and press Enter");
+        FirstArray[i] = Console.ReadLine();
+    }
+}
+
+// Createing the Second Array for words witn 3 or less symbols and the index for 2nd array
+string[] SecondArray = new string[n];
+int secondArrayIndex = 0;
+
+// Sorting 3 and less, adding to the second array and writing it
+Console.WriteLine("Words with 3 or less symbols:");
+for (int i = 0; i < n; i++)
+{
+    if (FirstArray[i].Length <= 3)
+    {
+        // Добавляем его во второй массив и увеличиваем индекс второго массива
+        SecondArray[secondArrayIndex] = FirstArray[i];
+        secondArrayIndex++;
+    }
+}
+
+// Writing the Second Array
+for (int i = 0; i < secondArrayIndex; i++)
+{
+    Console.Write($" {SecondArray[i]} ");
+}
