@@ -1,0 +1,15 @@
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\bin\Debug\net6.0\Main_Prog.exe
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\bin\Debug\net6.0\Main_Prog.deps.json
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\bin\Debug\net6.0\Main_Prog.runtimeconfig.json
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\bin\Debug\net6.0\Main_Prog.dll
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\bin\Debug\net6.0\Main_Prog.pdb
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.csproj.AssemblyReference.cache
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.AssemblyInfoInputs.cache
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.AssemblyInfo.cs
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.csproj.CoreCompileInputs.cache
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.dll
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\refint\Main_Prog.dll
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.pdb
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\Main_Prog.genruntimeconfig.cache
+C:\Users\iuryk\Desktop\MainBlock_Attestation\Main_Prog\obj\Debug\net6.0\ref\Main_Prog.dll
