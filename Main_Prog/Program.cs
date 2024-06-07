@@ -15,21 +15,17 @@ Console.WriteLine("");
 
 //==========================================================================================================
 
-// input the length of the 1st array (unchecked)
+// --1-- input the length of the 1st array (unchecked)
 Console.WriteLine("Add the number of words in your Array and Press ENTER :");
 int n = int.Parse(Console.ReadLine());
 
-
-// Createing and filling the First Array
+// --2-- Createing and filling the First Array
 string[] FirstArray = new string[n];
-
-
 for (int i = 0; i < n; i++)
 {
-    // Filling the Array from the console with checking if for empty
+    // --3-- Filling the Array from the console with checking if for empty
     Console.WriteLine($"Add the word number {i + 1} and Press ENTER");
     FirstArray[i] = Console.ReadLine();
-
     while (string.IsNullOrEmpty(FirstArray[i]))
     {
         Console.WriteLine("!WARNING!------You cannot leave an empty value in the array.------!WARNING!"); 
@@ -38,26 +34,23 @@ for (int i = 0; i < n; i++)
     }
 }
 
-// Createing the Second Array for words with 3 or less symbols and the index for 2nd array
+// --4-- Createing the Second Array for words with 3 or less symbols and the index for 2nd array
 string[] SecondArray = new string[n];
 int secondArrayIndex = 0;
 
-// Sorting 3 and less, adding to the second array and writing it
-
+// --5-- Sorting 3 and less, adding to the second array and writing it
 for (int i = 0; i < n; i++)
 {
     if (FirstArray[i].Length <= 3)
     {
-        
         SecondArray[secondArrayIndex] = FirstArray[i];
         secondArrayIndex++;
     }
 }
 
-// Writing the Second Array
+// --6-- Writing the Second Array
 Console.WriteLine("");
 Console.Write("Words with 3 or less symbols: ");
-
 for (int i = 0; i < secondArrayIndex; i++)
 {
     Console.Write($"|  {SecondArray[i]}  |");
